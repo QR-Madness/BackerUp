@@ -1,0 +1,14 @@
+# Object files
+*.obj
+
+#Testing Directory
+TESTING_DIR
+
+#Debug Directory
+Debug
+
+#Logs
+logger/*
+
+#Visual Studio Files
+*.vcxproj*
