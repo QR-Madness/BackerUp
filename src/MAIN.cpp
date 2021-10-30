@@ -8,7 +8,9 @@ Profile Files
 Disk Manager; Move backups to removable medias
 Encryption Implementation
 
-Compilation CMD : cl /std:c++20 src/* 
+Compilation Commands \/
+MSVC:
+cl /std:c++20 /Fe:BackerUp.exe src/*
 */
 using namespace std;
 
@@ -32,11 +34,6 @@ void main() {
 	cout << Shell.CommandStringStorage.banner;
 	cout << getVersion() << endl;
 	cout << "type \"help\" for help" << endl;
-
-	//DEBUG SECTION
-	//Mover.printDirectory("./test");
-	//Mover.writeBackup(ProfileMain);
-
 
 	//Starting shell
 	while (true) {

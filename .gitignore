@@ -12,3 +12,4 @@ logger/*
 
 #Visual Studio Files
 *.vcxproj*
+.vs

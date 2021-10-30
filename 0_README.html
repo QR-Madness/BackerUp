@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+        }
+        
+        folder {
+            background-color: gray;
+            color: greenyellow;
+        }
+        
+        html {
+            background-color: black;
+        }
+        
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 12vw;
+            /*  */
+            color: white;
+            background-color: rgb(58, 6, 6);
+        }
+        
+        .banner h2 {
+            padding-left: 1vw;
+            padding-right: 1vw;
+            font-size: 5vw;
+        }
+        
+        .banner h4 {
+            padding-right: 1vw;
+            padding-left: 1vw;
+            padding-bottom: 1vw;
+            font-size: 1em;
+        }
+        
+        .content-block {
+            position: absolute;
+            top: 12vw;
+            left: 0;
+            right: 0;
+            height: min-content;
+            padding: 3vw;
+            /*  */
+            color: whitesmoke;
+        }
+        
+        .index {
+            width: max-content;
+            padding: 1vw;
+            /*  */
+            border: 1px solid rgb(58, 6, 6);
+        }
+        
+        .index a {
+            text-decoration: none;
+            color: yellow;
+        }
+        
+        .index a:hover {
+            transition-duration: 350ms;
+            background-color: orange;
+        }
+    </style>
+    <title>BackerUp Documentation</title>
+</head>
+
+<body>
+    <div class="banner">
+        <h2>BackerUp</h2>
+    </div>
+    <div class="content-block">
+        <h2 id="case">Case</h2>
+        <p>BackerUp is a purely C++ backup tool designed to be totally customizable and modular allowing modifications to fit every purpose you might need it for.</p>
+        <div class="index">
+            <p>Page Structure</p>
+            <a href="#case">1) Case</a>
+            <br>
+            <a href="#install">2) Installation</a>
+            <br>
+            <a href="#usage">3) Usage</a>
+            <br>
+            <a href="#modding">4) Modification</a>
+        </div>
+        <h2 id="install">Installation</h2>
+        <p><b>NOTE:</b> C++17 language standard or greater <b>required</b> to compile from source. Compile all source files (src/*) to build binary/executable.
+        </p>
+        <h2 id="usage">Usage</h2>
+        <p>Typing "help" as command displays all commands for active manager.
+            <br>
+            <p>Managers</p>
+            <li>Backup Manager: handles backup creation</li>
+            <li>Profile Manager: handles backup profile (configuration) creation, editing</li>
+        </p>
+        <h2 id="modding">Modification</h2>
+        <p>Modification is easy with BackerUp. Simply add a function in the headers (include/), then define it in the corresponding C++ source file (src/). Please note that compilation will require a language standard of C++17 or greater.</p>
+        <hr>
+        <p>https://semver.org/</p>
+    </div>
+</body>
+
+</html>
